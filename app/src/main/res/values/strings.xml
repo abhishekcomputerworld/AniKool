@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AnuKool Final</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Activity</string>
+    <string name="title_notifications">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_title_app_add">Apps</string>
+    <string name="search_text">Search</string>
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+
+    <string name="device_admin_add_explanation">"Smart AppLocker won't use any other feature of device admin other than protecting from uninstalling."</string>
+    <string name="toast_msg_device_admin_enable">Smart AppLocker has been added to device admin.</string>
+    <string name="toast_msg_device_admin_disable">Smart AppLocker has been removed from device admin.</string>
+    <string name="apps_with_usage_access_text">Apps with usage access</string>
+    <string name="usage_access_permission_request_text">App Locker service needs new permission on android Lollipop. please enable permisson on the next screen.</string>
+    <string name="accessibility_service_label">accessibility_service_label</string>
+
+    <string name="accessibility_desc">"After enable the service,
+1. decrease battery usage 50%
+2. enable additional features
+3. lock service after device reboots will speed up
+
+This service is only used for the above features, we never collect or track any user information."</string>
+
+
+</resources>

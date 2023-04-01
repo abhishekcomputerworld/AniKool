@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_title_bar_height"
+            android:background="@color/main_title_bar_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/app_select_back_btn"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/btn_transback_with_theme_effect"
+                android:src="@mipmap/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/app_select_title_text"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/dialog_title_app_add"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/app_select_search_edit"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="@string/search_text"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="3.0dip"
+                android:paddingRight="3.0dip"
+                android:paddingBottom="1.0dip"
+                android:textColor="#ffffffff"
+                android:textColorHint="#aaffffff"
+                android:textSize="18.0sp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/app_select_search_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_search"
+                android:background="@drawable/btn_transback_with_theme_effect" />
+
+            <include
+                android:id="@+id/switch_view"
+                layout="@layout/switch_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/app_select_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/app_select_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginRight="@dimen/fab_side_margin"
+        android:layout_marginBottom="@dimen/fab_bottom_margin"
+        /><!--
+        app:fab_colorDisabled="#ffaaaaaa"
+        app:fab_colorNormal="#3DAE0D"
+        app:fab_colorPressed="#077C0C"-->
+
+</FrameLayout>
